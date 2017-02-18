@@ -1,0 +1,41 @@
+debug: false
+
+logging:
+    level:
+        root: WARN
+        org.springframework: WARN
+        org.springframework.boot: OFF
+        org.springframework.web: WARN
+        org.springframework.security: WARN
+        org.springframework.http.client: DEBUG
+        org.hibernate: OFF
+        org.hibernate.SQL : OFF
+        org.elasticsearch: WARN
+        jdbc: WARN
+        com.finddriver: DEBUG
+
+spring:
+    application:
+        name: finder
+        
+    jackson:
+        serialization.write_dates_as_timestamps: false
+        serialization.indent_output: false
+
+    mvc:
+        favicon:
+            enabled: false
+        
+server:
+    port: 9000
+    
+management:
+    port: 9001
+    
+finder:
+    mongo:
+        database: finder
+        host: localhost
+        password:
+        port: 27017
+

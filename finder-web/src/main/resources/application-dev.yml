@@ -1,0 +1,8 @@
+debug: true
+
+spring:
+    profiles:
+        active: dev
+        
+    jackson:
+        serialization.indent_output: true
